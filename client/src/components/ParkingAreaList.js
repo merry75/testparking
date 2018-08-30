@@ -31,7 +31,7 @@ class ParkingAreaList extends Component {
                 View
               </Button>
               <PayParkingDialog
-                buttonLabel="Pay"
+                buttonLabel="Book"
                 defaultData={parkingAreaList}
               />
             </p>
@@ -41,7 +41,7 @@ class ParkingAreaList extends Component {
           <Row>
             <div className="col-12" id="parking_area_list">
               <div className="layout-title">
-                <h2>Parking areas</h2>
+                <h2>Parking Areas</h2>
               </div>
             </div>
           </Row>
@@ -78,7 +78,7 @@ class ParkingAreaList extends Component {
                 2018 All rights reserved | This site is developed{" "}
                 <i className="fa fa-heart-o" aria-hidden="true" /> by{" "}
                 <a
-                  href="https://github.com/merry75?tab=repositories"
+                  href="https://github.com/merry75/testparking"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

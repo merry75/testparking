@@ -200,7 +200,7 @@ class PayParkingDialog extends React.Component {
       else pay_amount += time_diff * weekend_rate;
     }
     pay_amount -= (pay_amount * discount_rate) / 100;
-    this.setState({ pay_amount: pay_amount });
+    this.setState({ pay_amount: pay_amount + " $" });
 
     if (this.state.parking_id !== "")
       this.setState({ calculated: !this.state.calculated });
@@ -315,7 +315,7 @@ class PayParkingDialog extends React.Component {
           toggle={this.toggle}
           className={this.props.className}
         >
-          <ModalHeader toggle={this.toggle}>Pay View</ModalHeader>
+          <ModalHeader toggle={this.toggle}>Book View</ModalHeader>
           <ModalBody>
             <AvForm onSubmit={this.handleSubmit}>
               <AvGroup row>
@@ -349,7 +349,7 @@ class PayParkingDialog extends React.Component {
                       Start time
                     </Label>
                   ) : (
-                    <Label for="startTime">Star time</Label>
+                    <Label for="startTime">Start time</Label>
                   )}
                 </Col>
                 <Col sm={9}>
@@ -464,7 +464,7 @@ class PayParkingDialog extends React.Component {
                     type="text"
                     name="amountToPay"
                     value={this.state.pay_amount}
-                    placeholder="0"
+                    placeholder="0 $"
                     disabled
                   />
                 </Col>

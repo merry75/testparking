@@ -48,7 +48,7 @@ class BookParkingDialog extends React.Component {
                   <Col style={{ float: "left" }} sm={8}>
                     Booked this parking area from {book["start_date"]}{" "}
                     {book["start_time"]} to {book["end_date"]}{" "}
-                    {book["end_time"]} for {book.pay_amount} $.
+                    {book["end_time"]} for {book.pay_amount}.
                   </Col>
                   <Col sm={4}>
                     <Button
