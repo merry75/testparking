@@ -43,7 +43,7 @@ export default class ParkingArea extends React.Component {
           <div className="card-button">
             <EditParkingDialog buttonLabel="Edit" defaultData={this.props} />
             <DeleteParkingDialog buttonLabel="Delete" id={this.props.id} />
-            <BookParkingDialog buttonLabel="Check Booking" books={books} />
+            <BookParkingDialog buttonLabel="Bookings" books={books} />
           </div>
         </CardBody>
       </Card>

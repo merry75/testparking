@@ -7,6 +7,7 @@
     cd yourprojectdirectory/Server
     ./Raven.Server.exe
     go to http://127.0.0.1:port (port number is specified in the console) and make sure to set up port to 8080 when configuring ravendb
+    follow the ravendb web installation and go to databases
     create the local database = "db_parking"
 
 # 2.Run the node server (backend)
