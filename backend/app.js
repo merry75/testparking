@@ -118,7 +118,6 @@ app.use("/payParkingArea", async function(req, res) {
   res.header("Access-Control-Allow-Methods", "POST, GET, DELETE");
 
   data = req.body;
-  console.log(data);
 
   let pay = {
     collection: "Pay",
@@ -165,7 +164,6 @@ app.use("/delBookList", async function(req, res) {
   res.header("Access-Control-Allow-Methods", "POST, GET, DELETE");
 
   data = req.body;
-  console.log(data);
 
   let book = await session.load(data.id);
   await session.delete(book);

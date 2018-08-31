@@ -170,8 +170,6 @@ class PayParkingDialog extends React.Component {
       //case weekend
       else pay_amount = startDayRestTime * weekend_rate;
 
-      console.log("first = " + pay_amount);
-
       var day_diff = moment(this.state.end_date).diff(
         moment(this.state.start_date),
         "days"
@@ -184,16 +182,12 @@ class PayParkingDialog extends React.Component {
         else pay_amount += 24 * weekend_rate;
       }
 
-      console.log("second = " + pay_amount);
-
       var endDayRestTime = moment(
         this.state.end_date + " " + this.state.end_time
       ).diff(moment(this.state.end_date + " 00:00"), "hours");
       if (endDateTime.weekday() > 0 && endDateTime.weekday() < 6)
         pay_amount += endDayRestTime * weekday_rate;
       else pay_amount += endDayRestTime * weekend_rate;
-
-      console.log("third = " + pay_amount);
     } else {
       if (startDateTime.weekday() > 0 && startDateTime.weekday() < 6)
         pay_amount += time_diff * weekday_rate;

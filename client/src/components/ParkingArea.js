@@ -12,7 +12,6 @@ export default class ParkingArea extends React.Component {
   }
 
   errorImage(e) {
-    console.log(e.target.src);
     e.target.src = "https://i.imgur.com/alZJFFR.jpg";
   }
 
